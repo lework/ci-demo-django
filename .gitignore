@@ -1,0 +1,13 @@
+.python-version
+.DS_Store
+*.pyc
+*.pyo
+*.log
+!.gitkeep
+!.gitignore
+tmp/*
+__pycache__
+__pycache__/*
+.cache/*
+.pytest_cache/*
+pip_cache

@@ -1,0 +1,23 @@
+uwsgi:
+    touch-reload: /src/.reload
+    chmod-socket: 775
+    processes: 1
+    threads: "%(%k * 2 + 1)"
+    pidfile: /tmp/%n.pid
+    http: :80
+    thunder-lock: True
+    max-requests: 3200
+    max-requests-delta: 128
+    chdir: %d
+    harakiri: 300
+    post-buffering: 8192
+    buffer-size: 32768
+    module: mysite.wsgi:application
+    master: True
+    enable-threads: True
+    uid: root
+    gid: root
+    single-interpreter: True
+    lazy-apps: True
+    file: wsgi.py
+    static-map: /static=%d/static
