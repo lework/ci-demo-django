@@ -8,6 +8,7 @@ global-variables:
     insecure: true
   - &default_cache_settings
     image: drillster/drone-volume-cache
+    settings:
     volumes:
       - name: cache
         path: /cache
