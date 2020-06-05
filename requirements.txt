@@ -10,4 +10,4 @@
 # manage.py: 10
 # mysite/urls.py: 17
 # mysite/wsgi.py: 12
-Django == 2.2.4
+Django == 2.2.13
